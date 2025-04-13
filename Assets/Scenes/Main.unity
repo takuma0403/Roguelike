@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 647210687}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 4, y: 4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -389,8 +389,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1547774223}
   - component: {fileID: 1547774222}
+  - component: {fileID: 1547774224}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: BoardManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,6 +425,34 @@ Transform:
   - {fileID: 1000324131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1547774224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547774221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac901c6607dc2da43ae6c3ae09babf54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Width: 8
+  Height: 8
+  GroundTiles:
+  - {fileID: 11400000, guid: 03b8671a1db0b454dacc1fd24c9567f0, type: 2}
+  - {fileID: 11400000, guid: 2af1d18729e7f08488284dbd7b3442a0, type: 2}
+  - {fileID: 11400000, guid: 79f2ebf3da6992b44b81a59950100850, type: 2}
+  - {fileID: 11400000, guid: 825b99d313a32344fbbd6f064c51b7ff, type: 2}
+  - {fileID: 11400000, guid: a50e2377a4943c7439a4bb84b0586fff, type: 2}
+  - {fileID: 11400000, guid: 8f67ca4165393014195b172b95de233a, type: 2}
+  - {fileID: 11400000, guid: 6e1832149e543b1498a1eb53a3610ba1, type: 2}
+  - {fileID: 11400000, guid: 4ab2ba16f4d68a2428d8b527a30e555b, type: 2}
+  WallTiles:
+  - {fileID: 11400000, guid: abfb6dfd8debd454c8f75ef166b87ad9, type: 2}
+  - {fileID: 11400000, guid: 3d7ade4ef726a564c94482fc87703977, type: 2}
+  - {fileID: 11400000, guid: 0e198ab8215a7074c99085dc337348d8, type: 2}
+  - {fileID: 11400000, guid: 1f36f62f27b65d444b129d2783e361b8, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
