@@ -34,7 +34,7 @@ public class BoardManager : MonoBehaviour
                    tile = GroundTiles[Random.Range(0, GroundTiles.Length)]; 
                } 
               
-               m_Tilemap.SetTile(新しい Vector3Int(x, y, 0), タイル); 
+               m_Tilemap.SetTile(new Vector3Int(x, y, 0), tile); 
            } 
        } 
    } 
